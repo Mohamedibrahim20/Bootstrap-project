@@ -1,0 +1,266 @@
+body{
+    font-style: "sans serif";
+    background-color: #fff;
+}
+#btn-scroll{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 9999;
+    display: none;
+}
+.home{
+    background-color: #0099cc;
+    height: 100vh;
+    background-image: url("../images/header-bg.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+
+position: relative;
+}
+.overlay{
+position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+  }
+
+.nav{
+    z-index: 9999;
+    transition: all .5s;
+   
+    width: 100%;
+    background-color: transparent;
+    
+ 
+    
+}
+a
+{transition: all .1s;}
+.nav .navbar-brand ,.nav .nav-link-hover ,h5 ,h2 ,.overlay .prag ,.overlay .btn a{
+    color: #fff ;
+    transition: all 1s;
+    text-decoration: none;
+    
+}
+.nav .navbar-brand{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#pink{
+    color: #e65f78 !important;
+}
+.nav .nav-link-hover:hover{
+    color: #e65f78 !important;
+}
+.overlay .text{
+    font-weight: bold;
+
+    font-size: 50px;
+}
+.overlay .prag{
+    color: rgba(255, 255, 255, 0.6) !important
+}
+.overlay .btn{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px ;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius:25px ;
+    border: 2px solid #fff ;
+    padding: 20px;
+  font-size: 20px;
+    color: #fff;
+    transition: all 1s;
+  
+ 
+   letter-spacing: 3px;
+}
+.overlay .btn:hover  {
+    background-color: #fff;
+    color: #000 !important;
+
+}
+
+.about i{
+    border: 2px solid #d4d4d4;
+ padding: 10px;
+ color: #000;
+ font-weight:bold ;
+ border-radius: 50%;
+transition: all .4s ;
+
+}
+.about i:hover{
+    border: 2px solid #e65f78;
+
+ color:#e65f78;
+
+
+
+}
+.setting{
+    padding: 10px;
+    background-color: #2b2424;;
+    position: fixed;
+    top: 120px;
+    color: #fff;
+}
+.scroll a{
+    border: 2px solid #fff!important;
+    border-radius:20px ;
+    padding: 30px 15px;
+    position: absolute;
+    animation:scroll 2s infinite;
+}
+.scroll a::after{
+   width: 2px;
+   height: 10px;
+   bottom: 10px;
+   left: 12px;
+   content: "";
+   position: absolute;
+background-color: #fff;
+}
+@keyframes scroll{
+    0%{bottom: 55px;}
+    20%{bottom:40px;}
+    40%{bottom: 50px;}
+    60%{bottom: 40px;}
+    100%{bottom: 50px;}
+
+}
+.about .image .img-fluid{
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    padding: .25rem;
+    width: 100%;
+
+}
+.services , .client{
+    background-color: #F8F9FA;
+}
+.service-text i{
+    color: #e65f78;;
+    font-size: 50px;
+    
+}
+.service-text .line{
+    width: 50px;
+    height: 1px;
+    margin: auto;
+    background-color:#e65f78 ;
+    transition: all 1s;
+    
+}
+.service-text:hover.service-text .line{
+    width: 70px;
+   
+}
+.section .text-center .text-black{
+    color: black !important;
+  margin-top: 50px;
+}
+.btn2{
+    background-color: #e65f78;
+    box-shadow: none; 
+    color: #fff !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.carousel-indicators .custom{
+    
+    background-color: #e65f78;
+    width: 12px;
+    height: 5px;
+    transition: all .5s;
+    
+}
+.carousel-indicators .active{
+    
+    background-color: #e65f78;
+    width: 20px;
+    height: 5px;
+    
+    
+}
+.portfolio .image{
+    transition: all 1s 5s;
+   
+}
+.image .image-title{
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all .3s;
+    opacity: 0;
+  
+  
+}
+
+.image:hover .image-title{
+    opacity: 1;
+    
+    
+
+}
+.image .image-h {
+    width: 100%;
+    position: absolute;
+    
+    bottom: 0;
+    transition: all .8s;
+  
+   
+    
+  
+}
+.image:hover .image-h{
+    transform: translate(0,-100%);
+   bottom: 12%;
+   
+    
+    
+
+}
+.nav-tabs .active{
+    background-color: #e65f78 !important;
+    color: #fff !important;
+}
+
+.nav-tabs .nav-link {
+    color: #000 ;
+    transition: all .5s;
+   
+}
+.nav-tabs .nav-link:hover{
+    background-color: #e65f78 !important;
+    color:#fff !important;
+}
+.blog{
+    background-color:#F8F9FA ;
+}
+.contacts .form-control{
+    box-shadow: none;
+
+    
+
+    
+}
+.last{
+    background-color: #242424;
+}
+.last a {
+    color: gray !important;
+    
+}
